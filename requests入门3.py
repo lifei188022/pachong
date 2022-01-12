@@ -9,4 +9,5 @@ headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWeb
 resp=requests.get(url=url,params=param,headers=headers)
 print(resp.request.url)
 print(resp.json())
+resp.close()
 
